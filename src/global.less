@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PingFangRegular;
+}
+
+@font-face {
+  font-family: PingFangBold;
+  src: url(@/assets/fonts/PingFangBold.ttf);
+}
+
+@font-face {
+  font-family: PingFangLight;
+  src: url(@/assets/fonts/PingFangLight.ttf);
+}
+
+@font-face {
+  font-family: PingFangMedium;
+  src: url(@/assets/fonts/PingFangMedium.ttf);
+}
+
+@font-face {
+  font-family: PingFangRegular;
+  src: url(@/assets/fonts/PingFangRegular.ttf);
+}
+
+body {
+  background-color: var(--WL-1);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+.transition-box-shadow {
+  transition: box-shadow 0.3s var(--smooth);
+}
+.transition-opacity {
+  transition: opacity 0.3s var(--smooth);
+}
+.transition-color {
+  transition: color 0.3s var(--smooth);
+}
+.transition-background {
+  transition: background 0.3s var(--smooth);
+}
+.transition-background-color {
+  transition: background-color 0.3s var(--smooth);
+}
+.transition-background-image {
+  transition: background-image 0.3s var(--smooth);
+}
+.transition-transform {
+  transition: transform 0.3s var(--smooth);
+}
+.transition-size {
+  transition: width, height 0.3s var(--smooth);
+}
+.transition-width {
+  transition: width 0.3s var(--smooth);
+}
+.transition-height {
+  transition: height 0.3s var(--smooth);
+}
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.text-overflow-single {
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-overflow-double {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-break: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.inline-flex-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.round-fill {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.round-large {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.round-medium {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.round-small {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sandbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
